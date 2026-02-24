@@ -25,7 +25,8 @@ public class Song
             _durationSeconds = durationSeconds;
             return;
         }
-        _durationSeconds = 0;
+
+        throw new Exception("duration should be greater then zero");
     }
 
     public string GetFormattedDuration()
